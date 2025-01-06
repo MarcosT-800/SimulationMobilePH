@@ -1,11 +1,51 @@
 .block {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  ion-modal {
-    --height: auto;
-  }
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 20px;
+  padding-top: 60px;
+  background: linear-gradient(to bottom, white 20%, black 20%);
+  align-self: center;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.button {
+  background: red;
+  color: white;
+  padding: 20px 125px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ion-modal {
+  --height: auto;
+}

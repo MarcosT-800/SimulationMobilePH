@@ -16,6 +16,7 @@ import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Login from './pages/Login/Login'; // Página de login
+import GetStarted from './pages/GetStarted';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -36,7 +37,7 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const history = useHistory();
 
   // Verifica a autenticação ao carregar o aplicativo
@@ -45,11 +46,13 @@ const App: React.FC = () => {
     setIsAuthenticated(!!token); // Atualiza o estado com base no token */
   }, []);
 
+  const showTabBar = !['/GetStarted', '/login'].includes(location.pathname);
+
   return (
     <IonApp>
       <IonReactRouter>
         <IonTabs>
-          <IonRouterOutlet>
+          <IonRouterOutlet className='background-primary'>
             <Route exact path="/login">
               <Login setIsAuthenticated={(value) => setIsAuthenticated(value)} />
             </Route>
@@ -62,10 +65,15 @@ const App: React.FC = () => {
             <Route exact path="/tab3">
               {isAuthenticated ? <Tab3 /> : <Redirect to="/login" />}
             </Route>
+            <Route exact path="/GetStarted">
+              <GetStarted />
+            </Route>
             <Route exact path="/">
-              <Redirect to="/tab1" />
+              <Redirect to="/GetStarted" />
             </Route>
           </IonRouterOutlet>
+          
+          {showTabBar && (
           <IonTabBar slot="bottom">
             <IonTabButton tab="tab1" href="/tab1">
               <IonIcon icon={triangle} />
@@ -80,6 +88,7 @@ const App: React.FC = () => {
               <IonLabel>Tab  t3</IonLabel>
             </IonTabButton>
           </IonTabBar>
+          )}
         </IonTabs>
       </IonReactRouter>
     </IonApp>

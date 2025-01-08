@@ -37,7 +37,7 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
   const history = useHistory();
 
   // Verifica a autenticação ao carregar o aplicativo

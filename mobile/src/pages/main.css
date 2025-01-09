@@ -13,13 +13,22 @@
 }
 
 .block {
+  padding: 0;
+  margin: 0;
   width: 100%;
   height: 90vh;
-  padding: 0px;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  padding: 26px;
+  margin: 0;
+  width: 100%; 
+  height: 90vh;
+  align-items: center;
+  display: flex;
   flex-direction: column;
+  gap: 20px;
+ /*  padding: 0px;
+  display: flex;
+  flex-direction: column; */
 }
 
 .card {
@@ -47,6 +56,107 @@
   display: flex;
 }
 
+.title_modal {
+  margin-top: 20px;
+    font-size: 22px;
+    width: 92%;
+    text-align: center;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+.subtitle_modal {
+  margin-top: 1px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    /* font-weight: 600; */
+    font-family: poppins;
+    color: #969AA8;
+}
+
+/* Estilo para os inputs de login */
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaçamento entre os inputs */
+  padding: 0px;
+  width: 100%;
+}
+
+/* Estilo para cada IonItem (input) */
+.custom-input {
+  --border-radius: 10px;
+  --background: #f1f1f1;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para o label */
+.custom-label {
+  font-size: 14px; /* Ajuste o tamanho da fonte do label */
+  color: #333; /* Cor do texto do label */
+  margin-bottom: 8px; /* Espaçamento entre o label e o input */
+  font-weight: bold;
+}
+
+/* Estilo para o IonInput */
+.custom-input .ion-input {
+  font-size: 16px; /* Tamanho da fonte do input */
+  color: #333; /* Cor do texto do input */
+  --placeholder-color: #aaa; /* Cor do placeholder */
+  border-radius: 20px; /* Borda arredondada para o input */
+  padding: 16px; /* Aumenta o padding para aumentar a altura do input */
+  --height: 50px; /* Aumenta a altura do input */
+}
+/* Estilo para o IonInput quando em foco */
+.custom-input .ion-input:focus {
+  --background: #e0e0e0; /* Fundo um pouco mais escuro quando em foco */
+  --border-color: #007bff; /* Cor da borda quando em foco */
+}
+
+
 ion-modal {
   --height: auto;
+}
+
+/* Remover o padding e margens padrões do Ionic */
+.modal-content {
+  padding: 0;
+  margin: 0;
+}
+
+/* Ajustar o conteúdo do modal */
+.modal-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Estilo para a imagem no topo */
+.modal-image img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Estilo para o formulário */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Estilo para cada item do formulário */
+.login-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o botão */
+.submit-button {
+  margin-top: 20px;
 }

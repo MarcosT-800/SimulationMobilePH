@@ -25,8 +25,8 @@ function GetStarted() {
       </div>
       <h1 className="title">Bem-vindo ao PH Negócios App</h1>
       <p className="subtitle">Antecipe seu FGTS hoje mesmo de forma rápida e simples com a PH Negócios.</p>
-       {/* Botão reutilizável */}
-       <ModalButton
+      {/* Botão reutilizável */}
+      <ModalButton
         text="Iniciar"
         className="custom-button"
         onClick={() => console.log("Botão clicado!")}
@@ -36,36 +36,37 @@ function GetStarted() {
         <div className="block">
           <div>
 
-              <h1 className="">Bem-vindo ao PH Negócios App</h1>
-              <p className="">Por favor, faça login para continuar</p>
+            <h1 className="title_modal">Bem-vindo a PH!</h1>
+            <p className="">Vamos continuar com o login!</p>
           </div>
-              {/* Imagem no topo */}
-                <img alt="Silhouette of mountains" src="/PHlogo.png" />
+          {/* Imagem no topo */}
+          <img alt="Silhouette of mountains" src="/PHlogo.png" />
 
-              {/* Mensagem de login */}
+          {/* Mensagem de login */}
 
-              {/* Inputs de login */}
-              <div>
-                <IonItem>
-                  <IonLabel position="floating">E-mail</IonLabel>
-                  <IonInput type="email" placeholder="Digite seu e-mail" />
-                </IonItem>
+          {/* Inputs de login */}
+         {/* Inputs de login */}
+<div className="login-inputs">
+    <IonLabel className="custom-label">E-mail ou CPF</IonLabel>
+  <IonItem className="custom-input">
+    <IonInput type="email" placeholder="Digite seu e-mail" />
+  </IonItem>
 
-                <IonItem>
-                  <IonLabel position="floating">Senha</IonLabel>
-                  <IonInput type="password" placeholder="Digite sua senha" />
-                </IonItem>
-              </div>
+    <IonLabel className="custom-label">Senha</IonLabel>
+  <IonItem className="custom-input">
+    <IonInput type="password" placeholder="Digite sua senha" />
+  </IonItem>
+</div>
 
-              {/* Botão para outra página */}
-                      <ModalButton
-                text="Iniciar"
-                className="custom-button"
-                onClick={() => console.log("Botão clicado!")}
-              />
-            </div>
-          </IonModal>
+          {/* Botão para outra página */}
+          <ModalButton
+            text="Iniciar"
+            className="custom-button"
+            onClick={() => console.log("Botão clicado!")}
+          />
         </div>
+      </IonModal>
+    </div>
   );
 }
 

@@ -83,7 +83,7 @@ function GetStarted() {
           <ModalButton
             text="Entrar"
             className="custom-button-modal"
-            href="/dashboard"
+            ref="/dashboard"
           />
 
           <div className="custom-content-hr">

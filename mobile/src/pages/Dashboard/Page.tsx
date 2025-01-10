@@ -55,7 +55,7 @@ function Dashboard() {
         </div>
       </div>
       <div className="custom-dash-products">
-
+          <h1>Notificações</h1>
       </div>
     </>
   );

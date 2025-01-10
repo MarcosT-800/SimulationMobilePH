@@ -17,6 +17,7 @@ import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Login from './pages/Login/Login'; // Página de login
 import GetStarted from './pages/GetStarted';
+import Dashboard from './pages/Dashboard/Page';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -42,6 +43,7 @@ const App: React.FC = () => {
 
   // Verifica a autenticação ao carregar o aplicativo
   useEffect(() => {
+    setIsAuthenticated(false);
     /* const token = localStorage.getItem('authToken');
     setIsAuthenticated(!!token); // Atualiza o estado com base no token */
   }, []);
@@ -64,6 +66,9 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/tab3">
               {isAuthenticated ? <Tab3 /> : <Redirect to="/login" />}
+            </Route>
+            <Route exact path="/dashboard">
+               <Dashboard />
             </Route>
             <Route exact path="/GetStarted">
               <GetStarted />

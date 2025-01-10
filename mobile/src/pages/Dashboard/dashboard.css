@@ -1,0 +1,71 @@
+.custom-dash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #191225;
+}
+
+.custom-dash-p-sejabemvindo {
+    color: var(--color-system-text-text-white, #FFF);
+text-align: center;
+/* Mobile/Body 1/Regular */
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 133%; /* 21.28px */
+letter-spacing: 0.32px; 
+margin-top: 20px;
+}
+
+.custom-dash-card {
+    display: flex;
+    padding: var(--Spacing-System-spacing-20, 20px) var(--Spacing-System-spacing-24, 24px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-System-spacing-12, 12px);
+    flex: 1 0 0;
+    border-radius: var(--Radius-System-radius-20, 20px);
+    background: #D70404;
+}
+.custom-dash-navbar {
+    display: flex;
+    flex-direction: row;    
+    padding: 0px var(--Spacing-0, 0px);
+    align-items: center;
+    gap: 11px;
+    gap: 163px;
+    margin-top: 18px;
+}
+
+.custom-div-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-dash-menu {
+    display: flex;
+    width: 100%;
+    padding: var(--Spacing-System-spacing-none, 0px);
+    flex-direction: row;
+    align-items: center;
+    gap: var(--Spacing-System-spacing-32, 32px);
+    border-radius: var(--Spacing-System-spacing-none, 0px);
+    background: #191225;
+    justify-content: space-around;
+    color: white;
+}
+
+.custom-dash-products {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 771px;
+    border-radius: var(--Radius-System-radius-32, 32px);
+    background: #F7F7F7;
+}

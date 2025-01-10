@@ -1,21 +1,31 @@
 .custom-button {
-    --background: red;
     --color: white;
     --padding-start: 90px;
     --padding-end: 90px;
     --padding-top: 22px;
     --padding-bottom: 23px;
-    --border-radius: 20px;
-    font-size: 17px;
-    text-wrap: nowrap;
-    display: flex;
-    justify-content: space-between; /* Espaça os itens igualmente */
-    align-items: center; /* Alinha verticalmente ao centro */
+    --color: white;
+    --border-radius: 15px;
+    --background: #D70404;
+    --width: 247px;
+    --height: 60px;
+    --flex-shrink: 0;
+  
 }
 
 .button-text {
-  flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
-  text-align: left; /* Alinha o texto à esquerda */
+  color: #FFF;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button-arrow {

@@ -5,11 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 50px;
   padding: 20px;
   padding-top: 60px;
   background: linear-gradient(to bottom, white 30%, black 30%);
   align-self: center;
+}
+
+.GetStartedLogo {
+  margin-bottom: 30px;
 }
 
 .block {
@@ -40,39 +44,55 @@
   text-align: center;
   font-size: 30px;
   color: #FFFFFF;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  /* margin-top: 40px; */
+  /* margin-bottom: 15px; */
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  /* padding: 30px; */
+  width: 247px;
 }
 
 .subtitle {
-  font-size: 14px;
-  color: #999999;
-  text-align: center;
-  margin-bottom: 15px;
-  padding-left: 55px;
-  padding-right: 55px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    width: 247px;
+    margin-bottom: 30px;
 }
 
 .title_modal {
-  margin-top: 20px;
-    font-size: 22px;
-    width: 92%;
-    text-align: center;
-    font-weight: 600;
-    font-family: poppins;
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 35px;
 }
 
 .subtitle_modal {
-  margin-top: 1px;
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-    /* font-weight: 600; */
-    font-family: poppins;
-    color: #969AA8;
+  color: #969AA8;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.LogoPHModal {
+  width: 180px;
+height: 103px;
+flex-shrink: 0;
 }
 
 /* Estilo para os inputs de login */
@@ -86,30 +106,114 @@
 
 /* Estilo para cada IonItem (input) */
 .custom-input {
-  --border-radius: 10px;
-  --background: #f1f1f1;
-  --padding-start: 12px;
-  --padding-end: 12px;
+  height: 50px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #F8F7FB;
+  background: #F8F7FB;
+  --timing: 0.3s;
+  --width-of-input: 173px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: gray;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: 10px;
+  transition: border-radius 0.5s ease;
+  background: #F8F7FB;
+  font-size: 0.9rem;
+  width: 315px;
+  height: 50px;
+  /* padding-inline: 0.5em; */
+  /* padding-block: 0.7em; */
+  border: none;
+  margin-top: 10px;
+}
+
+.form {
+  margin-top: 22px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.custom-button-modal {
+  width: 327px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #D70404;
+  margin-top: 20px;
+}
+
+.custom-hr {
+  width: 73px;
+height: 0px;
+flex-shrink: 0;
+stroke-width: 1.5px;
+stroke: #F6F6F6;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 0.7px solid #D0D0D0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-wrap: nowrap;
+  align-items: center;
+}
+
+.p_credenciais {
+  color: #ABB3BB;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.24px;
+  margin-left: -8px;
+}
+
+input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
 }
 
 /* Estilo para o label */
 .custom-label {
-  font-size: 14px; /* Ajuste o tamanho da fonte do label */
-  color: #333; /* Cor do texto do label */
-  margin-bottom: 8px; /* Espaçamento entre o label e o input */
-  font-weight: bold;
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: self-start;
+  margin-bottom: 15px;
 }
 
 /* Estilo para o IonInput */
 .custom-input .ion-input {
-  font-size: 16px; /* Tamanho da fonte do input */
-  color: #333; /* Cor do texto do input */
-  --placeholder-color: #aaa; /* Cor do placeholder */
-  border-radius: 20px; /* Borda arredondada para o input */
-  padding: 16px; /* Aumenta o padding para aumentar a altura do input */
-  --height: 50px; /* Aumenta a altura do input */
+  width: 315px;
+  height: 50px;
+  flex-shrink: 0;
+  fill: #F8F7FB;
+  stroke-width: 1px;
+  stroke: #F8F7FB;
 }
 /* Estilo para o IonInput quando em foco */
 .custom-input .ion-input:focus {
@@ -159,4 +263,47 @@ ion-modal {
 /* Estilo para o botão */
 .submit-button {
   margin-top: 20px;
+}
+
+.custom-content-hr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.custom-p-hr {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 157px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #969AA8;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+}
+
+.custom-not-account {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.custom-not-account-span {
+  color: #D70404;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 3px;
 }

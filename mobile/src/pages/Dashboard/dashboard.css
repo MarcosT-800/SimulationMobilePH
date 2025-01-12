@@ -5,11 +5,32 @@
     background: #191225;
 }
 
+.custom-p-bomdia {
+    color: var(--white-text-secondary, rgba(255, 255, 255, 0.80));
+/* Mobile/Body 4/Regular */
+font-family: poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 133%; /* 17.29px */
+letter-spacing: 0.26px;
+}
+
+.custom-p-name {
+    color: var(--color-system-text-text-white, #FFF);
+    font-family: poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+}
+
 .custom-dash-p-sejabemvindo {
     color: var(--color-system-text-text-white, #FFF);
     text-align: center;
     /* Mobile/Body 1/Regular */
-    font-family: Outfit;
+    font-family: poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -65,27 +86,102 @@
 
 .custom-dash-card {
     display: flex;
-    padding: var(--Spacing-System-spacing-20, 23px) var(--Spacing-System-spacing-24, 14px);
+    padding: 23px 14px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--Spacing-System-spacing-12, 10px);
+    gap: 10px;
     flex: 1 0 0;
-    border-radius: var(--Radius-System-radius-20, 20px);
-    background: #D70404;
+    border-radius: 20px;
+    background: #292334; /* Cor padrão (preto) */
     margin-top: 24px;
     margin-bottom: 24px;
     color: white;
     text-align: center;
-}
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .custom-dash-card.active {
+    background: #d70404; /* Cor do card ativo (vermelho) */
+  }
 
 .custom-dash-products {
     display: flex;
-    width: 360px;
+    /* width: 360px; */
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 771px;
-    border-radius: var(--Radius-System-radius-32, 32px);
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* gap: 771px; */
+    /* border-radius: var(--Radius-System-radius-32, 32px); */
     background: #F7F7F7;
 }
+
+.custom-products-notificationcard {
+    display: flex;
+    padding: var(--Spacing-System-spacing-20, 18px) var(--Spacing-System-spacing-16, -1px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Spacing-System-spacing-24, 24px);
+    align-self: stretch;
+    border-radius: var(--Spacing-System-spacing-24, 24px);
+    background: var(--color-system-background-background-white, #FFF);
+    width: 100%;
+    margin: 0px;
+}
+
+.custom-products-notificationcardheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.card-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    margin: 30px;
+    gap: 10px;
+  }
+  
+  .carousel-card {
+    min-width: 100%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-header h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .card-header h3 {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card-content {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  

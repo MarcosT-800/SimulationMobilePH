@@ -7,36 +7,27 @@
 
 .custom-dash-p-sejabemvindo {
     color: var(--color-system-text-text-white, #FFF);
-text-align: center;
-/* Mobile/Body 1/Regular */
-font-family: Outfit;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 133%; /* 21.28px */
-letter-spacing: 0.32px; 
-margin-top: 20px;
+    text-align: center;
+    /* Mobile/Body 1/Regular */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%;
+    /* 21.28px */
+    letter-spacing: 0.32px;
+    margin-top: 20px;
 }
 
-.custom-dash-card {
-    display: flex;
-    padding: var(--Spacing-System-spacing-20, 20px) var(--Spacing-System-spacing-24, 24px);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--Spacing-System-spacing-12, 12px);
-    flex: 1 0 0;
-    border-radius: var(--Radius-System-radius-20, 20px);
-    background: #D70404;
-}
 .custom-dash-navbar {
     display: flex;
-    flex-direction: row;    
-    padding: 0px var(--Spacing-0, 0px);
+    padding: 0px var(--Spacing-System-spacing-none, 0px);
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 11px;
-    gap: 163px;
-    margin-top: 18px;
+    gap: var(--Spacing-System-spacing-16, 117px);
+    align-self: stretch;
+    margin: 20px;
 }
 
 .custom-div-navbar {
@@ -46,17 +37,46 @@ margin-top: 20px;
     gap: 10px;
 }
 
-.custom-dash-menu {
+.custom-nav-search {
     display: flex;
-    width: 100%;
-    padding: var(--Spacing-System-spacing-none, 0px);
-    flex-direction: row;
+    width: 64px;
+    justify-content: flex-end;
     align-items: center;
-    gap: var(--Spacing-System-spacing-32, 32px);
+    gap: 16px;
+}
+
+.custom-dash-menu {
     border-radius: var(--Spacing-System-spacing-none, 0px);
-    background: #191225;
-    justify-content: space-around;
+    /* background: #191225; */
+    /* justify-content: space-around; */
     color: white;
+    width: 100%;
+}
+
+
+.custom-dash-content-cards {
+    display: flex;
+    padding: var(--Spacing-System-spacing-none, 0px) var(--Spacing-System-spacing-16, 16px);
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: var(--Spacing-System-spacing-8, 8px);
+    align-self: stretch;
+}
+
+.custom-dash-card {
+    display: flex;
+    padding: var(--Spacing-System-spacing-20, 23px) var(--Spacing-System-spacing-24, 14px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-System-spacing-12, 10px);
+    flex: 1 0 0;
+    border-radius: var(--Radius-System-radius-20, 20px);
+    background: #D70404;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: white;
+    text-align: center;
 }
 
 .custom-dash-products {

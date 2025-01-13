@@ -29,7 +29,7 @@ function GetStarted() {
         <circle cx="52" cy="4" r="4" fill="white" />
       </svg>
       <h1 className="title">Bem-vindo ao PH Negócios App</h1>
-      <p className="subtitle">Explore the world of analyzing news and sports where you will be submerged to games!</p>
+      <p className="subtitle">Empréstimo, INSS FGTS e muito mais aqui no PH Negócios App, Obtenha seu dinheiro já!</p>
       {/* Botão reutilizável */}
       <ModalButton
         text="Iniciar"

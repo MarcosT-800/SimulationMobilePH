@@ -203,6 +203,15 @@
  */  margin-top: -19px;
 }
 
+.bolinha {
+  display: inline-flex;
+  padding: var(--Spacing-System-spacing-2, 2px);
+  align-items: flex-start;
+  gap: var(--Spacing-System-spacing-none, 0px);
+  border-radius: var(--Spacing-System-spacing-32, 32px);
+  background: var(--Color-System-Icon-Avatar-State-Success, #17D686);
+}
+
 .card-carousel img {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;

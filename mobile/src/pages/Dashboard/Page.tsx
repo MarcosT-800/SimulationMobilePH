@@ -54,7 +54,10 @@ function Dashboard() {
               <nav className="custom-dash-navbar">
                 <div className="custom-div-navbar">
                   <div>
-                    <img src="/profile.png" />
+                      <div className="bolinha">
+                          <img src="/profile.png" />
+                      </div>
+                 
                   </div>
                   <div>
                     <p className="custom-p-bomdia">Bom dia!</p>

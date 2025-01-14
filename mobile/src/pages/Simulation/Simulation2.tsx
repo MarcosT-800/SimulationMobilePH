@@ -79,10 +79,10 @@ function Simulation2() {
                     </div>
 
                     <div className="custom-button-content">
-                        <Link to="/simulation2">
+                        <Link to="/simulation3">
                             <button
                                 className="custom-button-modal"
-                            >Entrar</button>
+                            >Simular</button>
                         </Link>
                     </div>
 

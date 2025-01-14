@@ -36,6 +36,7 @@ import './pages/app.css';
 import './theme/variables.css';
 import Simulation1 from './pages/Simulation/Simulation1';
 import Simulation2 from './pages/Simulation/Simulation2';
+import Simulation3 from './pages/Simulation/Simulation3';
 
 setupIonicReact();
 
@@ -75,6 +76,9 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/simulation2">
              <Simulation2 />
+            </Route>
+            <Route exact path="/simulation3">
+             <Simulation3 />
             </Route>
             <Route exact path="/dashboard">
               <Dashboard />

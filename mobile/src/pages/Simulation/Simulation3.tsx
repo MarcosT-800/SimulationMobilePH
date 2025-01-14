@@ -91,7 +91,7 @@ function Simulation3() {
 </div>
 
                     <div className="custom-button-content">
-                        <Link to="/simulation3">
+                        <Link to="/loading">
                             <button
                                 className="custom-button-modal"
                             >Simular</button>

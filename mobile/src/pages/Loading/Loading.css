@@ -1,0 +1,19 @@
+
+.custom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-content h3 {
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.spinner {
+
+}

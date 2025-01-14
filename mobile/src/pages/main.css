@@ -305,7 +305,7 @@ ion-modal {
 
 .custom-not-account-span {
   color: #D70404;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -327,4 +327,10 @@ input {
     gap: 20px;
     text-wrap: nowrap;
     align-items: center;
+}
+
+.custom-input-input {
+  text-align: left;
+  margin-left: 10px;
+  outline: none;
 }

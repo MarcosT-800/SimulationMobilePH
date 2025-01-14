@@ -34,6 +34,8 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './pages/app.css';
 /* Theme variables */
 import './theme/variables.css';
+import Simulation1 from './pages/Simulation/Simulation1';
+import Simulation2 from './pages/Simulation/Simulation2';
 
 setupIonicReact();
 
@@ -67,6 +69,12 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/tab3">
               {isAuthenticated ? <Tab3 /> : <Redirect to="/login" />}
+            </Route>
+            <Route exact path="/simulation1">
+             <Simulation1 />
+            </Route>
+            <Route exact path="/simulation2">
+             <Simulation2 />
             </Route>
             <Route exact path="/dashboard">
               <Dashboard />

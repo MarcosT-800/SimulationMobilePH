@@ -44,6 +44,9 @@ import Cadastro2 from './pages/Documents/Cadastro2'
 import Cadastro3 from './pages/Documents/Cadastro3';
 import Cadastro4 from './pages/Documents/Cadastro4';
 import Cadastro5 from './pages/Documents/Cadastro5';
+import Loading3 from './pages/Loading/Loading3';
+import Loading2 from './pages/Loading/Loading2';
+import Proposta1 from './pages/Proposal/Proposta1';
 
 setupIonicReact();
 
@@ -105,8 +108,17 @@ const App: React.FC = () => {
             <Route exact path="/cadastro5">
              <Cadastro5 />
             </Route>
+            <Route exact path="/proposta1">
+             <Proposta1 />
+            </Route>
             <Route exact path="/loading">
              <Loading />
+            </Route>
+            <Route exact path="/loading2">
+             <Loading2 />
+            </Route>
+            <Route exact path="/loading3">
+             <Loading3 />
             </Route>
             <Route exact path="/dashboard">
               <Dashboard />

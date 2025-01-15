@@ -1,0 +1,108 @@
+.custom-proposta1-content {
+    background: #0E0E0E;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-proposta1-navbar {
+    display: inline-flex;
+align-items: center;
+gap: 232px;
+}
+
+.custom-proposta1-navbar button {
+    width: 42px;
+height: 42px;
+border-radius: 21px;
+background: #242424;
+}
+
+.custom-proposta1-navbar h3 {
+    color: #878787;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.custom-proposta1-navbar h4 {
+    color: #F1F1F1;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 90% */
+    text-wrap: nowrap;
+}
+
+.custom-proposta1-navbar h5 {
+    color: #048547;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.custom-proposta1-card {
+    width: 343px;
+    height: 344px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #4F4F4F;
+    background: #242424;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-proposta1-status {
+    display: flex;
+    justify-content: space-around;
+    width: 307px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #989898;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+.custom-proposta1-status p {
+    margin-top: -5px;
+}
+
+.cardimg {
+    width: 210px;
+}
+
+.custom-proposta1-grid {
+    display: flex;
+    width: 264px;
+    height: 72px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    margin-top: 25px;
+}
+
+.custom-proposta1-grid button{
+    display: flex;
+    width: 72px;
+    height: 72px;
+    padding: 14px 6.2px 13.425px 6px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #242424;
+}

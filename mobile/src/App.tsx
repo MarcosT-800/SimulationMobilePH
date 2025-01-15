@@ -43,6 +43,7 @@ import Cadastro1 from './pages/Documents/Cadastro1';
 import Cadastro2 from './pages/Documents/Cadastro2'
 import Cadastro3 from './pages/Documents/Cadastro3';
 import Cadastro4 from './pages/Documents/Cadastro4';
+import Cadastro5 from './pages/Documents/Cadastro5';
 
 setupIonicReact();
 
@@ -100,6 +101,9 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/cadastro4">
              <Cadastro4 />
+            </Route>
+            <Route exact path="/cadastro5">
+             <Cadastro5 />
             </Route>
             <Route exact path="/loading">
              <Loading />

@@ -40,9 +40,9 @@ function Simulation4() {
 
                 <nav className="custom-simulation3-navbar">
                         <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3247 6.17496C17.8691 5.71935 17.1304 5.71935 16.6748 6.17496L9.67476 13.175C9.21915 13.6306 9.21915 14.3693 9.67476 14.8249L16.6748 21.8249C17.1304 22.2805 17.8691 22.2805 18.3247 21.8249C18.7803 21.3693 18.7803 20.6306 18.3247 20.175L12.1496 13.9999L18.3247 7.82488C18.7803 7.36926 18.7803 6.63057 18.3247 6.17496Z" fill="#D70404" />
-                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.1342 5.86554C21.5077 5.23907 20.492 5.23907 19.8656 5.86554L13.9997 11.7314L8.13399 5.86563C7.50753 5.23916 6.49182 5.23916 5.86536 5.86563C5.23889 6.49209 5.23889 7.50779 5.86536 8.13426L11.7311 14L5.86553 19.8656C5.23907 20.492 5.23907 21.5077 5.86553 22.1342C6.492 22.7607 7.5077 22.7607 8.13417 22.1342L13.9997 16.2686L19.8654 22.1343C20.4918 22.7608 21.5075 22.7607 22.134 22.1343C22.7605 21.5078 22.7605 20.4921 22.134 19.8657L16.2684 14L22.1342 8.13418C22.7607 7.50771 22.7607 6.49201 22.1342 5.86554Z" fill="#505050"/>
+</svg>
                         </button>
                     </nav>
 
@@ -63,7 +63,7 @@ function Simulation4() {
                         <h3>Antes de continuar, precisamos que você leia e concorde com a politica de privacidade.</h3>
                      </div>
 </div>
-                        <Link to="/simulation5">
+                        <Link to="/cadastro2">
                             <button
                                 className="custom-button-modal"
                                 >Continuar</button>

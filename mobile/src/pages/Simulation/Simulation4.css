@@ -19,7 +19,7 @@ svg {
     color: var(--Gray_28, #282828);
     /* Body1/700 */
     font-family: "Poppins";
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 25px;
@@ -60,7 +60,7 @@ svg {
     color: var(--Gray_28, #282828);
     /* H6/700 */
     font-family: "Poppins";
-    font-size: 26px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: 110%;

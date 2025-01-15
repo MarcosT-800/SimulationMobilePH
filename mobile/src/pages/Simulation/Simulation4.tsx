@@ -10,6 +10,9 @@ import {
     IonInput,
     IonItem,
     IonToast,
+    IonLabel,
+    IonList,
+    IonThumbnail
 } from "@ionic/react";
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import ModalButton from "../../components/Buttons/Button";
@@ -83,7 +86,7 @@ function Simulation4() {
                         </div>
 
                     </div>
-                    <div className="custom-simulation4-detalhes">
+                    <div className="custom-simulation4-detalhes"  onClick={toggleParcelas}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3335 3.82922C4.59712 3.82922 4.00016 4.36793 4.00016 5.03247V24.2845C4.00016 24.949 4.59712 25.4878 5.3335 25.4878H18.6668C19.4032 25.4878 20.0002 24.949 20.0002 24.2845V5.03247C20.0002 4.36793 19.4032 3.82922 18.6668 3.82922H5.3335ZM1.3335 5.03247C1.3335 3.03886 3.12436 1.42271 5.3335 1.42271H18.6668C20.876 1.42271 22.6668 3.03886 22.6668 5.03247V24.2845C22.6668 26.2781 20.876 27.8943 18.6668 27.8943H5.3335C3.12436 27.8943 1.3335 26.2781 1.3335 24.2845V5.03247Z" fill="white" />
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M27.9998 8.64223C27.9998 7.97769 27.4029 7.43897 26.6665 7.43897L22.6665 7.43897L22.6665 21.878L26.6665 21.878C27.4029 21.878 27.9998 21.3393 27.9998 20.6747L27.9998 8.64223ZM26.6665 5.03247C28.8756 5.03247 30.6665 6.64861 30.6665 8.64223L30.6665 20.6747C30.6665 22.6684 28.8756 24.2845 26.6665 24.2845L19.9998 24.2845L19.9998 5.03247L26.6665 5.03247Z" fill="white" />
@@ -104,6 +107,45 @@ function Simulation4() {
                         </svg>
 
                     </div>
+
+                    {isParcelasVisible && (
+                             <IonCardContent>
+                             <IonList>
+                               <IonItem>
+                                 <IonThumbnail slot="start">
+                                   <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                                 </IonThumbnail>
+                                 <IonLabel>Primera Parcela</IonLabel>
+                                 <p>R$ 000,00</p>
+                               </IonItem>
+                     
+                               <IonItem>
+                                 <IonThumbnail slot="start">
+                                   <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                                 </IonThumbnail>
+                                 <IonLabel>Segunda Parcela</IonLabel>
+                                 <p>R$ 000,00</p>
+
+                               </IonItem>
+                     
+                               <IonItem>
+                                 <IonThumbnail slot="start">
+                                   <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                                 </IonThumbnail>
+                                 <IonLabel>Tercenira Parcela</IonLabel>
+                                 <p>R$ 000,00</p>
+                               </IonItem>
+                     
+                               <IonItem lines="none">
+                                 <IonThumbnail slot="start">
+                                   <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                                 </IonThumbnail>
+                                 <IonLabel>Quarto Parcela</IonLabel>
+                                 <p>R$ 000,00</p>
+                               </IonItem>
+                             </IonList>
+                           </IonCardContent>
+                        )}
                     <div className="custom-content-check">
 
                         <div className="check">
@@ -114,13 +156,13 @@ function Simulation4() {
                     <div className="custom-button-content">
 
 
-                        <Link to="/simulation2">
+                        <Link to="/simulation5">
                             <button
                                 className="custom-button-modal"
                             >Ir para o cadastro</button>
                         </Link>
 
-                        <Link to="/simulation2">
+                        <Link to="/simulation3">
                             <button
                                 className="custom-button-modal2"
                             >Cancelar</button>

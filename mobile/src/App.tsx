@@ -39,6 +39,7 @@ import Simulation2 from './pages/Simulation/Simulation2';
 import Simulation3 from './pages/Simulation/Simulation3';
 import Loading from './pages/Loading/Loading';
 import Simulation4 from './pages/Simulation/Simulation4';
+import Cadastro1 from './pages/Documents/Cadastro1';
 
 setupIonicReact();
 
@@ -84,6 +85,9 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/simulation4">
              <Simulation4 />
+            </Route>
+            <Route exact path="/cadastro1">
+             <Cadastro1 />
             </Route>
             <Route exact path="/loading">
              <Loading />

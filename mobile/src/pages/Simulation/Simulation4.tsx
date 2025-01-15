@@ -156,7 +156,7 @@ function Simulation4() {
                     <div className="custom-button-content">
 
 
-                        <Link to="/simulation5">
+                        <Link to="/cadastro1">
                             <button
                                 className="custom-button-modal"
                             >Ir para o cadastro</button>

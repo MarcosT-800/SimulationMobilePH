@@ -103,18 +103,20 @@
 }
 
 .check {
-width: 328px;
+width: 388px;
 height: 54px;
 flex-shrink: 0;
 border: none;
+
+justify-content: center;
 }
 
 .p_credenciais {
-    width: 287px;
+    width: 330px;
     height: 38px;
     color: rgba(0, 0, 0, 0.80);
     font-family: 'Poppins';
-    font-size: 11px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

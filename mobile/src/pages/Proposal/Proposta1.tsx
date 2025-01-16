@@ -70,6 +70,31 @@ function Proposta1() {
 <circle cx="1.5" cy="12" r="1.5" fill="#F1F1F1"/>
 </svg>
                     </div>
+
+                    <p className="custom-proposta1-describe">A sleek black joystick with neon accents and a comfortable grip for precise gaming control...</p>
+
+                    <div className="custom-proposta1-proposta">
+                        <div className="custom-proposta1-item">
+                            <h3>Parcela</h3>
+                            <p>$30</p>
+                        </div>
+
+                        <div className="custom-proposta1-item">
+                            <h3>Parcela</h3>
+                            <p>$30</p>
+                        </div>
+
+                        <div className="custom-proposta1-item-total">
+                            <h3 className="">Parcela</h3>
+                            <p className="">$30</p>
+                        </div>
+
+                    </div>
+
+
+                        <button className="custom-proposta1-button">
+                            Simular novamente
+                        </button>
                     </div>
                 </IonContent>
             </IonPage>

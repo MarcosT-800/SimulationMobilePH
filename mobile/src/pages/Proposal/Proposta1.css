@@ -1,6 +1,6 @@
 .custom-proposta1-content {
     background: #0E0E0E;
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding: 20px;
     align-items: center;
@@ -105,4 +105,105 @@ background: #242424;
     flex-shrink: 0;
     border-radius: 24px;
     background: #242424;
+}
+
+.custom-proposta1-proposta {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #242424;
+    width: 90%;
+    height: 15vh;
+}
+
+
+.custom-proposta1-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-proposta1-item h3 {
+    width: 85px;
+    flex-shrink: 0;
+    color: #F1F1F1;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 112.5% */
+}
+
+.custom-proposta1-item p {
+    color: #F1F1F1;
+    text-align: right;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 112.5% */
+}
+
+.custom-proposta1-item-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-proposta1-item-total h3 {
+    width: 85px;
+    flex-shrink: 0;
+    color: #00E376;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 112.5% */
+}
+
+.custom-proposta1-item-total p {
+    color: #00E376;
+    text-align: right;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 112.5% */
+}
+
+.custom-proposta1-button {
+    display: flex;
+    width: 242px;
+    padding: 17px 131px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 1000px;
+    background: #048547;
+    color: #FFF;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 100% */
+}
+
+.custom-proposta1-describe {
+    width: 335px;
+    color: #808080;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

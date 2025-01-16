@@ -47,6 +47,8 @@ import Cadastro5 from './pages/Documents/Cadastro5';
 import Loading3 from './pages/Loading/Loading3';
 import Loading2 from './pages/Loading/Loading2';
 import Proposta1 from './pages/Proposal/Proposta1';
+import Signup from './pages/Login/Forget';
+import Forget from './pages/Login/Forget';
 
 setupIonicReact();
 
@@ -71,6 +73,12 @@ const App: React.FC = () => {
           <IonRouterOutlet className='background-primary'>
             <Route exact path="/login">
               <Login setIsAuthenticated={(value) => setIsAuthenticated(value)} />
+            </Route>
+            <Route exact path="/register">
+              <Signup />
+            </Route>
+            <Route exact path="/forget">
+              <Forget />
             </Route>
             <Route exact path="/tab1">
               {isAuthenticated ? <Tab1 /> : <Redirect to="/login" />}

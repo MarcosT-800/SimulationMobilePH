@@ -10,15 +10,15 @@
 
 .custom-proposta1-navbar {
     display: inline-flex;
-align-items: center;
-gap: 232px;
+    align-items: center;
+    gap: 232px;
 }
 
 .custom-proposta1-navbar button {
     width: 42px;
-height: 42px;
-border-radius: 21px;
-background: #242424;
+    height: 42px;
+    border-radius: 21px;
+    background: #242424;
 }
 
 .custom-proposta1-navbar h3 {
@@ -36,7 +36,8 @@ background: #242424;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 90% */
+    line-height: 18px;
+    /* 90% */
     text-wrap: nowrap;
 }
 
@@ -95,7 +96,7 @@ background: #242424;
     margin-top: 25px;
 }
 
-.custom-proposta1-grid button{
+.custom-proposta1-grid button {
     display: flex;
     width: 72px;
     height: 72px;
@@ -136,7 +137,8 @@ background: #242424;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
 }
 
 .custom-proposta1-item p {
@@ -146,7 +148,8 @@ background: #242424;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
 }
 
 .custom-proposta1-item-total {
@@ -165,7 +168,8 @@ background: #242424;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
 }
 
 .custom-proposta1-item-total p {
@@ -175,7 +179,8 @@ background: #242424;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
 }
 
 .custom-proposta1-button {
@@ -193,7 +198,8 @@ background: #242424;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 100% */
+    line-height: 18px;
+    /* 100% */
 }
 
 .custom-proposta1-describe {
@@ -203,7 +209,8 @@ background: #242424;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
+    /* 112.5% */
     margin-top: 10px;
     margin-bottom: 20px;
 }

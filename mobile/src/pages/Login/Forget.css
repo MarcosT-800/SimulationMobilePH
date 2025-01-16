@@ -37,7 +37,8 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 35.2px */
+    line-height: 110%;
+    /* 35.2px */
 }
 
 .custom-cadastro1-content p {
@@ -48,7 +49,8 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 127%; /* 20.32px */
+    line-height: 127%;
+    /* 20.32px */
 }
 
 .warner2 {
@@ -71,7 +73,8 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 127%; /* 17.78px */
+    line-height: 127%;
+    /* 17.78px */
 }
 
 .warner2-content {

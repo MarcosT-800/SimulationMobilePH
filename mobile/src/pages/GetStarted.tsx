@@ -42,7 +42,7 @@ const handleLogin = async () => {
   return (
     <div className="body">
       <div className="card">
-        <img alt="Silhouette of mountains" src="/GetStartedLogo.png" className="GetStartedLogo" />
+        <img alt="Silhouette of mountains" src="/Logo.png" className="GetStartedLogo" />
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" width="56" height="8" viewBox="0 0 56 8" fill="none">
         <circle cx="4" cy="4" r="4" fill="white" fill-opacity="0.25" />

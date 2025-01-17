@@ -82,6 +82,23 @@ function Dashboard() {
   }, []); // Apenas executa uma vez, ao carregar o componente
   
 
+  /* Modal Notificação */
+
+  const page = useRef(null);
+
+  const [presentingElement, setPresentingElement] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setPresentingElement(page.current);
+  }, []);
+
+  function dismiss() {
+    modal.current?.dismiss();
+  }
+
+  async function canDismiss(data?: any, role?: string) {
+    return role !== 'gesture';
+  }
 
   return (
     <>
@@ -166,7 +183,7 @@ function Dashboard() {
                 <IonCardTitle className="custom-card-title">Notificações</IonCardTitle>
 
                 <div>
-                  <p className="custom-card-seeall">Ver tudo</p>
+                  <p className="custom-card-seeall" >Ver tudo</p>
                 </div>
               </IonCardHeader>
 

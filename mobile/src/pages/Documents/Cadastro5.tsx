@@ -74,19 +74,11 @@ function Cadastro5() {
                                 </div>
                                 <div className="custom-input-gen">
 
-                                    <div>
+                                <div>
                                         <label>Tipo de documento</label>
-                                        <IonList>
-                                    <IonItem>
-                                        <IonSelect labelPlacement="stacked" value="conta corrente">
-                                        <IonIcon slot="start" icon={leaf} aria-hidden="true"></IonIcon>
-                                        <IonSelectOption value="conta corrente">Conta Corrente</IonSelectOption>
-                                        <IonSelectOption value="Poupança">Poupança</IonSelectOption>
-                                        <IonButton fill="clear" slot="end" aria-label="Show/hide password">
-                                        </IonButton>
-                                        </IonSelect>
-                                    </IonItem>
-                                    </IonList>
+                                        <IonItem>
+                                            <IonInput labelPlacement="stacked" placeholder="RG ou CPF"></IonInput>
+                                        </IonItem>
                                     </div>
 
                                     <div>
@@ -110,21 +102,25 @@ function Cadastro5() {
                                         <IonInput labelPlacement="stacked" placeholder=""></IonInput>
                                     </IonItem>
                                 </div>
-
-                                <div className="custom-content-check2">
+                                <div className="custom-content-check6">
                                 <div className="check">
                                     <input type="checkbox" />
-                                    <p className="p_credenciais2">Você aceita que a PH Negócios faça o compartilhamento de suas informações com o banco futuro?</p>
+                                    <p className="p_credenciais">Você aceita que a PH Negócios faça o compartilhamento de suas informações com o banco futuro?</p>
                                 </div>
                                 </div>
+
                             </div>
                         </div>
+
+                    </div>
+                        <div className="custom-cadastro2-button">
+
                         <Link to="/loading2">
                             <button
-                                className="custom-button-modal"
+                                className="custom-button-modal1"
                             >Continuar</button>
                         </Link>
-                    </div>
+                        </div>
 
                 </IonContent>
             </IonPage>

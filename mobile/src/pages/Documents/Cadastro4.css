@@ -92,3 +92,27 @@ hr {
 .custom-input-gen {
     display: flex;
 }
+
+.p_credenciais2 {
+    width: 333px;
+    height: 38px;
+    font-family: 'Poppins';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-wrap: wrap;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.80);
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.custom-cadastro4-form {
+    width: 99%;
+}

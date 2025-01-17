@@ -35,32 +35,32 @@ function Proposta1() {
                         </svg>
                         </button>
 
-                        <h3>Detalhes</h3>
+                        <h3>Proposta</h3>
                     </nav>
 
                     <div className="custom-proposta1-navbar">
-                        <h4>Nintendo Pro</h4>
-                        <h5>Edit</h5>
+                        <h4>Status</h4>
+                        <h5>Aprovada</h5>
                     </div>
 
-                    <div className="custom-proposta1-card">
-                        <img src="/Proposta1Card.png" className="cardimg" />
+{/*                     <div className="custom-proposta1-card">
+ */}                        <img src="/Logo.png" className="cardimg" />
 
                         <div className="custom-proposta1-status">
                             <div>
-                                <h3>Nintendo Pro</h3>
-                                <p>1200 Sales</p>
+                                <h3>Valor proposta</h3>
+                                <p>R$ 24,000,00</p>
                             </div>
 
-                            <h3>Pendente</h3>
+                            <h3>Aprovada</h3>
                         </div>
-                    </div>
-
-                    <div className="custom-proposta1-grid">
+{/*                     </div>
+ */}
+                 {/*    <div className="custom-proposta1-grid">
                         <button><img src="/Proposta1Card2.png"/></button>
                         <button><img src="/Proposta1Card2.png"/></button>
                         <button><img src="/Proposta1Card2.png"/></button>
-                    </div>
+                    </div> */}
 
                     <div className="custom-proposta1-navbar">
                         <h3>Mais </h3>
@@ -92,7 +92,7 @@ function Proposta1() {
                     </div>
 
 
-                        <button className="custom-proposta1-button">
+                        <button className="custom-button-modal1">
                             Simular novamente
                         </button>
                     </div>

@@ -12,7 +12,9 @@ import {
     IonToast,
     IonLabel,
     IonList,
-    IonThumbnail
+    IonThumbnail,
+    IonSelect,
+    IonSelectOption
 } from "@ionic/react";
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import ModalButton from "../../components/Buttons/Button";
@@ -20,7 +22,7 @@ import { Link } from "react-router-dom";
 import './Cadastro2.css';
 import '../Simulation/Simulation3.css';
 import { IonIcon } from '@ionic/react';
-import { eye, lockClosed } from 'ionicons/icons';
+import { eye, leaf, lockClosed } from 'ionicons/icons';
 function Cadastro2() {
     const modal = useRef<HTMLIonModalElement>(null);
     const [user_login, setUser_login] = useState("");
@@ -86,19 +88,36 @@ function Cadastro2() {
                                 </div>
 <div className="custom-input-gen">
 
-                                <div>
-                                    <label>Gênero</label>
-                                    <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="FEM"></IonInput>
-                                    </IonItem>
-                                </div>
+                                  <div>
+                                                                        <label>Gênero</label>
+                                                                        <IonList>
+                                                                    <IonItem>
+                                                                        <IonSelect labelPlacement="stacked" value="Masculino">
+                                                                        <IonIcon slot="start" icon="woman-outline.svg" aria-hidden="true"></IonIcon>
+                                                                        <IonSelectOption value="Masculino">Masculino</IonSelectOption>
+                                                                        <IonSelectOption value="Feminino">Feminino</IonSelectOption>
+                                                                        <IonButton fill="clear" slot="end" aria-label="Show/hide password">
+                                                                        </IonButton>
+                                                                        </IonSelect>
+                                                                    </IonItem>
+                                                                    </IonList>
+                                                                    </div>
 
-                                <div>
-                                    <label>Estado Cívil</label>
-                                    <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="Solteiro(a)"></IonInput>
-                                    </IonItem>
-                                </div>
+                             
+                                                                    <div>
+                                                                        <label>Estado cívil</label>
+                                                                        <IonList>
+                                                                    <IonItem>
+                                                                        <IonSelect labelPlacement="stacked" value="Solteiro">
+                                                                        <IonIcon slot="start" icon="/people-circle-outline.svg" aria-hidden="true"></IonIcon>
+                                                                        <IonSelectOption value="Solteiro">Solteiro</IonSelectOption>
+                                                                        <IonSelectOption value="Casado">Casado</IonSelectOption>
+                                                                        <IonButton fill="clear" slot="end" aria-label="Show/hide password">
+                                                                        </IonButton>
+                                                                        </IonSelect>
+                                                                    </IonItem>
+                                                                    </IonList>
+                                                                    </div>
 </div>
 
                                 <div>
@@ -117,7 +136,7 @@ function Cadastro2() {
                                   <IonList>
                                     <IonItem>
                                         <IonInput labelPlacement="stacked" placeholder="email@domain.com">
-                                        <IonIcon slot="start" icon={lockClosed} aria-hidden="true"></IonIcon>
+                                        <IonIcon slot="start" icon="/people-sharp.svg" aria-hidden="true"></IonIcon>
                                         <IonButton fill="clear" slot="end" aria-label="Show/hide">
                                             <IonIcon slot="icon-only" name={eye} aria-hidden="true"></IonIcon>
                                         </IonButton>
@@ -131,7 +150,7 @@ function Cadastro2() {
                                      <IonList>
                                     <IonItem>
                                         <IonInput labelPlacement="stacked" placeholder="email@domain.com">
-                                        <IonIcon slot="start" icon={lockClosed} aria-hidden="true"></IonIcon>
+                                        <IonIcon slot="start" icon="/mail-sharp.svg" aria-hidden="true"></IonIcon>
                                         <IonButton fill="clear" slot="end" aria-label="Show/hide">
                                             <IonIcon slot="icon-only" name={eye} aria-hidden="true"></IonIcon>
                                         </IonButton>
@@ -148,12 +167,16 @@ function Cadastro2() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="custom-cadastro2-button">
+
                     <Link to="/cadastro3">
                         <button
-                            className="custom-button-modal"
-                        >Continuar</button>
+                            className="custom-button-modal1"
+                            >Continuar</button>
                     </Link>
-                    </div>
+                            </div>
 
                 </IonContent>
             </IonPage>

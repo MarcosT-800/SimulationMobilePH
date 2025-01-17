@@ -48,6 +48,10 @@ hr {
     margin-bottom: 10px;
 }
 
+.custom-cadastro5-form {
+    width: 99%;
+}
+
 .custom-cadastro5-form-header h3{
     align-self: stretch;
     color: #242731;
@@ -106,4 +110,7 @@ hr {
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.80);
     margin-bottom: 10px
+}
+
+.custom-content-check5 {
 }

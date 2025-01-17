@@ -91,4 +91,15 @@ hr {
 
 .custom-input-gen {
     display: flex;
+    justify-content: space-between;
+}
+
+.custom-cadastro2-button {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.custom-cadastro2-form {
+    width: 99%;
 }

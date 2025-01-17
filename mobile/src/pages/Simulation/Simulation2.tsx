@@ -26,6 +26,9 @@ function Simulation2() {
         <>
             <IonPage>
                 <IonContent className="custom-dash-content" scrollY>
+
+<div className="custom-content-simulatio2">
+    <div>
                     <nav className="custom-simulation2-navbar">
                         <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -34,57 +37,42 @@ function Simulation2() {
                         </button>
                     </nav>
 
-
+    
                     <h3 className="custom-simulation2-simular">Simular contratação</h3>
-
                     <p className="custom-simulation2-p">Para simular a oferta de saque-aniversário do FGTS siga o passo a passo abaixo:</p>
-
-                    <div className="custom-simulation2-checkcontent">
-                        <div>
-
-                            <h3>Habilite o saque-aniversário no
-                                app FGTS</h3>
-                            <p>Ao finalizar marque a caixinha ao lado.</p>
-
-                            <div className="custom-simulation-comohabilitar">
-
-                                <a>Como habilitar?<span>{/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.66663 8.49998C2.66663 8.13179 2.9651 7.83331 3.33329 7.83331L12.6666 7.83331C13.0348 7.83331 13.3333 8.13179 13.3333 8.49998C13.3333 8.86817 13.0348 9.16665 12.6666 9.16665L3.33329 9.16665C2.9651 9.16665 2.66663 8.86817 2.66663 8.49998Z" fill="#D70404"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.52864 3.36195C7.78899 3.1016 8.2111 3.1016 8.47145 3.36195L13.1381 8.02862C13.3985 8.28896 13.3985 8.71108 13.1381 8.97142L8.47145 13.6381C8.2111 13.8984 7.78899 13.8984 7.52864 13.6381C7.26829 13.3777 7.26829 12.9556 7.52864 12.6953L11.7239 8.50002L7.52864 4.30476C7.26829 4.04441 7.26829 3.6223 7.52864 3.36195Z" fill="#D70404"/>
-</svg> */}
-                                </span></a>
-                            </div>
-
-
-
-
-                        </div>
-                        <input type="checkbox"></input>
-                    </div>
-
                     <div className="custom-simulation2-checkcontent">
                         <div>
                             <h3>Habilite o saque-aniversário no
                                 app FGTS</h3>
                             <p>Ao finalizar marque a caixinha ao lado.</p>
                             <div className="custom-simulation-comohabilitar">
-                                <a>Como habilitar?<span>{/* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.66663 8.49998C2.66663 8.13179 2.9651 7.83331 3.33329 7.83331L12.6666 7.83331C13.0348 7.83331 13.3333 8.13179 13.3333 8.49998C13.3333 8.86817 13.0348 9.16665 12.6666 9.16665L3.33329 9.16665C2.9651 9.16665 2.66663 8.86817 2.66663 8.49998Z" fill="#D70404"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.52864 3.36195C7.78899 3.1016 8.2111 3.1016 8.47145 3.36195L13.1381 8.02862C13.3985 8.28896 13.3985 8.71108 13.1381 8.97142L8.47145 13.6381C8.2111 13.8984 7.78899 13.8984 7.52864 13.6381C7.26829 13.3777 7.26829 12.9556 7.52864 12.6953L11.7239 8.50002L7.52864 4.30476C7.26829 4.04441 7.26829 3.6223 7.52864 3.36195Z" fill="#D70404"/>
-</svg> */}
+                                <a>Como habilitar?<span>
                                 </span></a>
                             </div>
                         </div>
                         <input type="checkbox"></input>
                     </div>
-
-                    <div className="custom-button-content">
+                    <div className="custom-simulation2-checkcontent">
+                        <div>
+                            <h3>Habilite o saque-aniversário no
+                                app FGTS</h3>
+                            <p>Ao finalizar marque a caixinha ao lado.</p>
+                            <div className="custom-simulation-comohabilitar">
+                                <a>Como habilitar?<span>
+                                </span></a>
+                            </div>
+                        </div>
+                        <input type="checkbox"></input>
+                    </div>
+    </div>
+    <div className="custom-button-content">
                         <Link to="/simulation3">
                             <button
-                                className="custom-button-modal"
+                                className="custom-button-modal1"
                             >Simular</button>
                         </Link>
-                    </div>
+    </div>
+</div>
 
                 </IonContent>
             </IonPage>

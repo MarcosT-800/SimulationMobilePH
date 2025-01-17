@@ -65,7 +65,7 @@ function Simulation4() {
 </div>
                         <Link to="/cadastro2">
                             <button
-                                className="custom-button-modal"
+                                className="custom-button-modal1"
                                 >Continuar</button>
                         </Link>
 

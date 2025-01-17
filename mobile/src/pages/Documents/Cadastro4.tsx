@@ -82,14 +82,14 @@ function Cadastro4() {
                                 <div className="custom-input-gen">
 
                                     <div>
-                                        <label>Gênero</label>
+                                        <label>Estado</label>
                                         <IonItem>
                                             <IonInput labelPlacement="stacked" placeholder="FEM"></IonInput>
                                         </IonItem>
                                     </div>
 
                                     <div>
-                                        <label>Estado Cívil</label>
+                                        <label>Cidade</label>
                                         <IonItem>
                                             <IonInput labelPlacement="stacked" placeholder="Solteiro(a)"></IonInput>
                                         </IonItem>
@@ -97,7 +97,7 @@ function Cadastro4() {
                                 </div>
 
                                 <div>
-                                    <label>Cidade</label>
+                                    <label>Complemento (opicional) </label>
                                     <IonItem>
                                         <IonInput labelPlacement="stacked" placeholder="São Paulo"></IonInput>
                                     </IonItem>
@@ -106,18 +106,21 @@ function Cadastro4() {
                                 <div className="custom-content-check2">
                                 <div className="check">
                                     <input type="checkbox" />
-                                    <p className="p_credenciais">Li e estou de acordo com o aviso de <span>privacidade</span> e a <span>politica de serviços</span> da <span>PH negócios</span></p>
+                                    <p className="p_credenciais2">Meu endereço não tem número</p>
                                 </div>
                                 </div>
                             </div>
                         </div>
-                        <Link to="/cadastro5">
-                            <button
-                                className="custom-button-modal"
-                            >Continuar</button>
-                        </Link>
+
                     </div>
 
+                        <div className="custom-cadastro2-button">
+                        <Link to="/cadastro5">
+                            <button
+                                className="custom-button-modal1"
+                            >Continuar</button>
+                        </Link>
+                        </div>
                 </IonContent>
             </IonPage>
         </>

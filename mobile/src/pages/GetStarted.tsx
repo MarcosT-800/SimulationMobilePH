@@ -59,7 +59,8 @@ const handleLogin = async () => {
         onClick={() => modal.current?.present()}
         />
 
-      <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 1]}>
+
+      <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 1]} >
         <div className="block">
           <div>
 
@@ -114,11 +115,10 @@ const handleLogin = async () => {
 
           </div>
           {/* Botão para outra página */}
-          <ModalButton
-            text="Entrar"
-            className="custom-button-modal"
+          <button
+            className="custom-button-modal1"
             onClick={handleLogin}
-          />
+          >Entrar</button>
 
           <div className="custom-content-hr">
           <svg xmlns="http://www.w3.org/2000/svg" width="75" height="2" viewBox="0 0 75 2" fill="none">

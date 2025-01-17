@@ -71,7 +71,7 @@ function Cadastro3() {
                                     <IonList>
                                     <IonItem>
                                         <IonSelect labelPlacement="stacked" value="conta corrente">
-                                        <IonIcon slot="start" icon={leaf} aria-hidden="true"></IonIcon>
+                                        <IonIcon slot="start" icon="wallet-outline.svg" aria-hidden="true"></IonIcon>
                                         <IonSelectOption value="conta corrente">Conta Corrente</IonSelectOption>
                                         <IonSelectOption value="Poupança">Poupança</IonSelectOption>
                                         <IonButton fill="clear" slot="end" aria-label="Show/hide password">
@@ -113,10 +113,13 @@ function Cadastro3() {
 
                             </div>
                         </div>
+                    </div>
+
+                    <div className="custom-cadastro2-button">
                         <Link to="/cadastro4">
                             <button
-                                className="custom-button-modal"
-                            >Continuar</button>
+                                className="custom-button-modal1"
+                                >Continuar</button>
                         </Link>
                     </div>
 

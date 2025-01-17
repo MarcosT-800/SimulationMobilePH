@@ -32,9 +32,7 @@ const handleLogin = async () => {
       // Redirecionar para outra página após login (exemplo)
       window.location.href = "/dashboard";
     } catch (error) {
-      console.log(error);
-/*       setToastMessage(error.message || "Erro ao fazer login.");
- */      setShowToast(true);
+       setShowToast(true);
     }
   };
 

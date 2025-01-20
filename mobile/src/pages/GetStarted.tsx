@@ -54,11 +54,10 @@ function GetStarted() {
       <h1 className="title">Bem-vindo ao PH Negócios App</h1>
       <p className="subtitle">Empréstimo, INSS FGTS e muito mais aqui no PH Negócios App, Obtenha seu dinheiro já!</p>
       {/* Botão reutilizável */}
-      <ModalButton
-        text="Iniciar"
+      <button
         className="custom-button"
         onClick={() => modal.current?.present()}
-      />
+      >Iniciar</button>
 
 
       <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 1]} >
@@ -109,12 +108,12 @@ function GetStarted() {
               </button>
             </div>
 
-<div className="check-content">
-            <div className="check">
-              <input type="checkbox" />
-              <p className="p_credenciais">Lembrar credênciais</p>
+            <div className="check-content">
+              <div className="check">
+                <input type="checkbox" />
+                <p className="p_credenciais">Lembrar credênciais</p>
+              </div>
             </div>
-</div>
 
           </div>
           {/* Botão para outra página */}
@@ -136,7 +135,10 @@ function GetStarted() {
           </div>
 
           <div>
-            <p className="custom-not-account">Ainda não tem uma conta?<a className="custom-not-account-span">Clique aqui</a></p>
+            <p className="custom-not-account">Ainda não tem uma conta?<Link to="/register"><a className="custom-not-account-span">Clique aqui</a></Link></p>
+          </div>
+          <div>
+          <p className="custom-not-account">Não lembra da sua senha?<Link to="/forget"><a className="custom-not-account-span">Clique aqui</a></Link></p>
           </div>
         </div>
 

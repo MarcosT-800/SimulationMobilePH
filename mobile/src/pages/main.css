@@ -16,6 +16,28 @@
   margin-bottom: 30px;
 }
 
+.custom-button {
+  color: white;
+  padding-right: 90px;
+  padding-left: 90px;
+  color: white;
+  border-radius: 15px;
+  background: #D70404;
+  width: 247px;
+  height: 60px;
+  flex-shrink: 0;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+.custom-button:hover {
+background: #ff0303;
+}
+
 .block {
   padding: 0;
   margin: 0;
@@ -162,6 +184,10 @@
   font-weight: 600;
   line-height: 115%; /* 16.1px */
   text-transform: uppercase;
+}
+
+.custom-buttom-modal1:hover {
+    background: #f00303;
 }
 
 .custom-hr {

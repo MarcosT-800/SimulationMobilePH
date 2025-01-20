@@ -47,13 +47,14 @@ import Cadastro5 from './pages/Documents/Cadastro5';
 import Loading3 from './pages/Loading/Loading3';
 import Loading2 from './pages/Loading/Loading2';
 import Proposta1 from './pages/Proposal/Proposta1';
-import Signup from './pages/Login/Forget';
+import Signup from './pages/Login/Sign';
 import Forget from './pages/Login/Forget';
 
 setupIonicReact();
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
 
   // Verifica a autenticação ao carregar o aplicativo
@@ -63,22 +64,34 @@ const App: React.FC = () => {
     setIsAuthenticated(!!token); // Atualiza o estado com base no token */
   }, []);
 
+ /*  useEffect(() => {
+    const unlisten = history.listen(() => {
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    });
+
+    return () => unlisten();
+  }, [history]); */
+
   const showTabBar = !['/GetStarted', '/login'].includes(location.pathname);
   const [activeIndex, setActiveIndex] = useState(0); // Estado para controlar o card ativo
 
   return (
     <IonApp>
+ {/*      {isLoading && <Loading />} */}
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet className='background-primary'>
             <Route exact path="/login">
               <Login setIsAuthenticated={(value) => setIsAuthenticated(value)} />
             </Route>
-            <Route exact path="/register">
-              <Signup />
-            </Route>
             <Route exact path="/forget">
               <Forget />
+            </Route>
+            <Route exact path="/register">
+              <Signup />
             </Route>
             <Route exact path="/tab1">
               {isAuthenticated ? <Tab1 /> : <Redirect to="/login" />}

@@ -15,12 +15,16 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle }
 import ModalButton from "../../components/Buttons/Button";
 import './Simulation2.css';
 import { Link } from "react-router-dom";
+import ComoAntecipar from "../../components/ComoAntecipar";
+import ComoAutorizar from "../../components/ComoAutorizar";
 function Simulation2() {
     const modal = useRef<HTMLIonModalElement>(null);
     const [user_login, setUser_login] = useState("");
     const [user_pass, setUser_pass] = useState("");
     const [showToast, setShowToast] = useState(false);
     const [toastMessage, setToastMessage] = useState("");
+    const [openModal, setOpenModal] = useState(false);
+    const [openModal2, setOpenModal2] = useState(false);
 
     return (
         <>
@@ -47,7 +51,7 @@ function Simulation2() {
                                 app FGTS</h3>
                             <p>Ao finalizar marque a caixinha ao lado.</p>
                             <div className="custom-simulation-comohabilitar">
-                                <a>Como habilitar?<span>
+                                <a onClick={() => setOpenModal2(true)}>Como habilitar?<span>
                                 </span></a>
                             </div>
                         </div>
@@ -63,7 +67,7 @@ function Simulation2() {
                                 app FGTS</h3>
                             <p>Ao finalizar marque a caixinha ao lado.</p>
                             <div className="custom-simulation-comohabilitar">
-                                <a>Como habilitar?<span>
+                                <a onClick={() => setOpenModal(true)}>Como habilitar?<span>
                                 </span></a>
                             </div>
                         </div>
@@ -81,6 +85,20 @@ function Simulation2() {
     </div>
 </div>
 
+
+            <IonModal isOpen={openModal} onDidDismiss={() => setOpenModal(false)} className="modal-dashboard1">
+                    <ComoAutorizar /> {/* Exibe o componente Notification dentro do modal */}
+                    <IonButton onClick={() => setOpenModal(false)} expand="block" color="danger">
+                    Fechar
+                    </IonButton>
+                </IonModal>
+
+                <IonModal isOpen={openModal2} onDidDismiss={() => setOpenModal2(false)} className="modal-dashboard1">
+                    <ComoAntecipar /> {/* Exibe o componente Notification dentro do modal */}
+                    <IonButton onClick={() => setOpenModal2(false)} expand="block" color="danger">
+                    Fechar
+                    </IonButton>
+                </IonModal>
                 </IonContent>
             </IonPage>
         </>

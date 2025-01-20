@@ -139,38 +139,49 @@
     text-decoration: none;
 }
 
-ol { padding-left: 55px; padding-right: 10px; color: white; }
-li { 
-  color: #4F4F4F; 
-  padding-left: 16px;
-  margin-top: 24px;
-  position: relative;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  
-  
-  &:before {
-    content: '';
-    display: block;
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    position: absolute; 
-    top: -13px;
-    left: -38px;
-  }
+.custom-simulation1-steps {
+    margin-top: 20px;
+    padding: 0 15px;
 }
 
-li::marker {
-    color: white;
-    z-index: 10000;
-    margin-top: 18px;
+.styled-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os itens */
 }
 
-strong { color: #292929; }
-
-ol.alternating-colors { 
-  li:before { border-color: #D70404; background: #D70404; color: white; z-index: -1;  margin-top: 0px;}
+.styled-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Espaçamento entre o número e o texto */
 }
+
+.step-number {
+    width: 30px; /* Largura fixa */
+    height: 30px; /* Altura fixa */
+    background-color: #D70404; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 50%; /* Garante que seja um círculo */
+    display: flex; /* Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 16px; /* Tamanho do texto */
+    flex-shrink: 0; /* Evita que o círculo diminua em layouts flex */
+}
+
+.styled-list strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.styled-list p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+

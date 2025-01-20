@@ -33,8 +33,8 @@ const handleLogin = async () => {
       window.location.href = "/dashboard";
     } catch (error) {
       console.log(error);
-/*       setToastMessage(error.message || "Erro ao fazer login.");
- */      setShowToast(true);
+      setToastMessage(error.message || "Erro ao fazer login.");
+      setShowToast(true);
     }
   };
 

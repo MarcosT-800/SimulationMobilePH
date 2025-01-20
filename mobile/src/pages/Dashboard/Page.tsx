@@ -124,7 +124,7 @@ function Dashboard() {
                   </div>
                   <div>
                     <p className="custom-p-bomdia">Bom dia!</p>
-                    <p className="custom-p-name">{user ? user.user_name : "Carregando..."}</p>
+                    <p className="custom-p-name">joao</p>
                   </div>
                 </div>
 

@@ -150,7 +150,7 @@ function Simulation4() {
 
                         <div className="check">
                             <input type="checkbox" />
-                            <p className="p_credenciais">Li e estou de acordo com o aviso de <span>privacidade</span> e a <span>politica de serviços</span> da <span>PH negócios</span></p>
+                            <p className="p_credenciais">Li e estou de acordo com o aviso de privacidade e a politica de serviços da PH negócios</p>
                         </div>
                     </div>
                     <div className="custom-button-content">

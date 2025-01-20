@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
     IonButton,
     IonModal,
@@ -16,42 +16,29 @@ import {
     IonSelect,
     IonSelectOption
 } from "@ionic/react";
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
-import ModalButton from "../../components/Buttons/Button";
+import InputMask from "react-input-mask"; // Biblioteca para máscara
 import { Link } from "react-router-dom";
 import './Cadastro2.css';
 import '../Simulation/Simulation3.css';
-import { IonIcon } from '@ionic/react';
-import { eye, leaf, lockClosed } from 'ionicons/icons';
+
 function Cadastro2() {
     const modal = useRef<HTMLIonModalElement>(null);
-    const [user_login, setUser_login] = useState("");
-    const [user_pass, setUser_pass] = useState("");
     const [showToast, setShowToast] = useState(false);
     const [toastMessage, setToastMessage] = useState("");
-
-    const [isParcelasVisible, setIsParcelasVisible] = useState(false);
-
-    const toggleParcelas = () => {
-        setIsParcelasVisible(!isParcelasVisible);
-    };
 
     return (
         <>
             <IonPage>
                 <IonContent className="custom-dash-content" scrollY>
-
                     <nav className="custom-simulation3-navbar">
                         <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3248 6.17496C17.8692 5.71935 17.1305 5.71935 16.6749 6.17496L9.67488 13.175C9.21927 13.6306 9.21927 14.3693 9.67488 14.8249L16.6749 21.8249C17.1305 22.2805 17.8692 22.2805 18.3248 21.8249C18.7804 21.3693 18.7804 20.6306 18.3248 20.175L12.1498 13.9999L18.3248 7.82488C18.7804 7.36926 18.7804 6.63057 18.3248 6.17496Z" fill="#D70404" />
+                                <path fillRule="evenodd" clipRule="evenodd" d="M18.3248 6.17496C17.8692 5.71935 17.1305 5.71935 16.6749 6.17496L9.67488 13.175C9.21927 13.6306 9.21927 14.3693 9.67488 14.8249L16.6749 21.8249C17.1305 22.2805 17.8692 22.2805 18.3248 21.8249C18.7804 21.3693 18.7804 20.6306 18.3248 20.175L12.1498 13.9999L18.3248 7.82488C18.7804 7.36926 18.7804 6.63057 18.3248 6.17496Z" fill="#D70404" />
                             </svg>
                         </button>
                     </nav>
 
-
                     <div className="custom-cadastro2-content">
-
                         <div className="custom-cadastro2-content-header">
                             <h3>Dados Pessoais</h3>
                             <p>Preencha os dados corretamente para enviar a proposta ao banco e tudo prosseguir corretamente abaixo preencha os seus dados:</p>
@@ -69,56 +56,57 @@ function Cadastro2() {
                                 <div>
                                     <label>Nome completo</label>
                                     <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="nome completo"></IonInput>
-                                    </IonItem>                               
-                                 </div>
-
-                                <div>
-                                <label>Nome da mãe</label>
-                                    <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="nome completo da mãe"></IonInput>
-                                    </IonItem>    
+                                        <IonInput labelPlacement="stacked" placeholder="Nome completo"></IonInput>
+                                    </IonItem>
                                 </div>
 
                                 <div>
-                                     <label>Data de nascimento</label>
+                                    <label>CPF</label>
                                     <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="12/05/1992"></IonInput>
-                                    </IonItem>    
+                                        <InputMask
+                                            mask="999.999.999-99"
+                                            placeholder="000.000.000-00"
+                                            className="ion-input-mask"
+                                        />
+                                    </IonItem>
                                 </div>
-<div className="custom-input-gen">
 
-                                  <div>
-                                                                        <label>Gênero</label>
-                                                                        <IonList>
-                                                                    <IonItem>
-                                                                        <IonSelect labelPlacement="stacked" value="Masculino">
-                                                                        <IonIcon slot="start" icon="woman-outline.svg" aria-hidden="true"></IonIcon>
-                                                                        <IonSelectOption value="Masculino">Masculino</IonSelectOption>
-                                                                        <IonSelectOption value="Feminino">Feminino</IonSelectOption>
-                                                                        <IonButton fill="clear" slot="end" aria-label="Show/hide password">
-                                                                        </IonButton>
-                                                                        </IonSelect>
-                                                                    </IonItem>
-                                                                    </IonList>
-                                                                    </div>
+                                <div>
+                                    <label>Data de nascimento</label>
+                                    <IonItem>
+                                        <InputMask
+                                            mask="99/99/9999"
+                                            placeholder="DD/MM/AAAA"
+                                            className="ion-input-mask"
+                                        />
+                                    </IonItem>
+                                </div>
 
-                             
-                                                                    <div>
-                                                                        <label>Estado cívil</label>
-                                                                        <IonList>
-                                                                    <IonItem>
-                                                                        <IonSelect labelPlacement="stacked" value="Solteiro">
-                                                                        <IonIcon slot="start" icon="/people-circle-outline.svg" aria-hidden="true"></IonIcon>
-                                                                        <IonSelectOption value="Solteiro">Solteiro</IonSelectOption>
-                                                                        <IonSelectOption value="Casado">Casado</IonSelectOption>
-                                                                        <IonButton fill="clear" slot="end" aria-label="Show/hide password">
-                                                                        </IonButton>
-                                                                        </IonSelect>
-                                                                    </IonItem>
-                                                                    </IonList>
-                                                                    </div>
-</div>
+                                <div className="custom-input-gen">
+                                    <div style={{ width: '100%'}}>
+                                        <label>Gênero</label>
+                                        <IonList>
+                                            <IonItem>
+                                                <IonSelect labelPlacement="stacked" value="Masculino">
+                                                    <IonSelectOption value="Masculino">Masculino</IonSelectOption>
+                                                    <IonSelectOption value="Feminino">Feminino</IonSelectOption>
+                                                </IonSelect>
+                                            </IonItem>
+                                        </IonList>
+                                    </div>
+
+                                    <div style={{ width: '100%'}}>
+                                        <label>Estado cívil</label>
+                                        <IonList>
+                                            <IonItem>
+                                                <IonSelect labelPlacement="stacked" value="Solteiro">
+                                                    <IonSelectOption value="Solteiro">Solteiro</IonSelectOption>
+                                                    <IonSelectOption value="Casado">Casado</IonSelectOption>
+                                                </IonSelect>
+                                            </IonItem>
+                                        </IonList>
+                                    </div>
+                                </div>
 
                                 <div>
                                     <label>Cidade</label>
@@ -128,41 +116,36 @@ function Cadastro2() {
                                 </div>
 
                                 <div className="custom-cadastro2-form-header">
-                                <h3>Contatos</h3>
-                                <p>Preencha suas informaões de contato corretamente</p>
-                            </div>
-                                <div>
-                                  <label>Nome completo</label>
-                                  <IonList>
-                                    <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="email@domain.com">
-                                        <IonIcon slot="start" icon="/people-sharp.svg" aria-hidden="true"></IonIcon>
-                                        <IonButton fill="clear" slot="end" aria-label="Show/hide">
-                                            <IonIcon slot="icon-only" name={eye} aria-hidden="true"></IonIcon>
-                                        </IonButton>
-                                        </IonInput>
-                                    </IonItem>
-                                    </IonList>
+                                    <h3>Contatos</h3>
+                                    <p>Preencha suas informações de contato corretamente</p>
                                 </div>
 
                                 <div>
-                                     <label>Nome completo</label>
-                                     <IonList>
+                                    <label>Telefone</label>
                                     <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="email@domain.com">
-                                        <IonIcon slot="start" icon="/mail-sharp.svg" aria-hidden="true"></IonIcon>
-                                        <IonButton fill="clear" slot="end" aria-label="Show/hide">
-                                            <IonIcon slot="icon-only" name={eye} aria-hidden="true"></IonIcon>
-                                        </IonButton>
-                                        </IonInput>
+                                        <InputMask
+                                            mask="(99) 99999-9999"
+                                            placeholder="(00) 00000-0000"
+                                            className="ion-input-mask"
+                                        />
                                     </IonItem>
-                                    </IonList>
                                 </div>
 
                                 <div>
-                                <label>Valor da sua renda mensal</label>
+                                    <label>E-mail</label>
                                     <IonItem>
-                                        <IonInput labelPlacement="stacked" placeholder="R$ 2.000.00"></IonInput>
+                                        <IonInput labelPlacement="stacked" placeholder="email@domain.com"></IonInput>
+                                    </IonItem>
+                                </div>
+
+                                <div>
+                                    <label>Valor da sua renda mensal</label>
+                                    <IonItem>
+                                        <InputMask
+                                            mask="R$ 99.999,99"
+                                            placeholder="R$ 0,00"
+                                            className="ion-input-mask"
+                                        />
                                     </IonItem>
                                 </div>
                             </div>
@@ -170,14 +153,10 @@ function Cadastro2() {
                     </div>
 
                     <div className="custom-cadastro2-button">
-
-                    <Link to="/cadastro3">
-                        <button
-                            className="custom-button-modal1"
-                            >Continuar</button>
-                    </Link>
-                            </div>
-
+                        <Link to="/cadastro3">
+                            <button className="custom-button-modal1">Continuar</button>
+                        </Link>
+                    </div>
                 </IonContent>
             </IonPage>
         </>

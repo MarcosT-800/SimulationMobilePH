@@ -40,6 +40,7 @@ function Simulation2() {
     
                     <h3 className="custom-simulation2-simular">Simular contratação</h3>
                     <p className="custom-simulation2-p">Para simular a oferta de saque-aniversário do FGTS siga o passo a passo abaixo:</p>
+                    <div className="check-simulation2-content">
                     <div className="custom-simulation2-checkcontent">
                         <div>
                             <h3>Habilite o saque-aniversário no
@@ -52,6 +53,10 @@ function Simulation2() {
                         </div>
                         <input type="checkbox"></input>
                     </div>
+
+                    
+
+                    
                     <div className="custom-simulation2-checkcontent">
                         <div>
                             <h3>Habilite o saque-aniversário no
@@ -63,6 +68,8 @@ function Simulation2() {
                             </div>
                         </div>
                         <input type="checkbox"></input>
+                    
+                    </div>
                     </div>
     </div>
     <div className="custom-button-content">

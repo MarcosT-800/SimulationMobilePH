@@ -12,13 +12,20 @@ import {
 } from "@ionic/react";
 
 import { IonCol, IonGrid, IonRow } from '@ionic/react';
+import Notification from '../../components/Notification'; // Importando o componente Notification
 
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import './dashboard.css';
 import { Link } from "react-router-dom";
+import Notification2 from "../../components/Notification2";
+import Notification3 from "../../components/Profile";
 function Dashboard() {
   const modal = useRef<HTMLIonModalElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false); // Estado para controlar o modal
+  const [showModal2, setShowModal2] = useState(false); 
+  const [showModal3, setShowModal3] = useState(false);
+
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
@@ -104,12 +111,13 @@ function Dashboard() {
     <>
       <IonPage>
         <IonContent className="custom-dash-content" scrollY>
+          
           <div className="custom-dash-content">
             <div className="custom-dash-menu">
               <nav className="custom-dash-navbar">
                 <div className="custom-div-navbar">
                   <div>
-                      <div className="bolinha">
+                      <div className="bolinha" onClick={() => setShowModal3(true)} style={{ cursor: 'pointer'}}>
                           <img src="/profile.png" />
                       </div>
                  
@@ -120,8 +128,8 @@ function Dashboard() {
                   </div>
                 </div>
 
-                <div className="custom-nav-search">
-                  <img src="/icon-search.svg" />
+                <div className="custom-nav-search" onClick={() => setShowModal(true)} style={{ cursor: 'pointer'}}>
+                  {/* <img src="/icon-search.svg" /> */}
                   <img src="/icon-bell.png" />
                 </div>
               </nav>
@@ -130,6 +138,9 @@ function Dashboard() {
             <p className="custom-dash-p-sejabemvindo">Seja bem-vindo ao App PH Negócios!</p>
 
             <div className="custom-dash-content-cards">
+            <IonGrid fixed={true}>
+              <IonRow>
+                <IonCol>
               <div className={`custom-dash-card ${activeIndex === 0 ? "active" : ""}`}
                 onClick={() => setActiveIndex(0)}>
                                 <Link to="/simulation1">
@@ -144,6 +155,9 @@ function Dashboard() {
 
                 <p>Antecipação FGTS</p>
               </div>
+              </IonCol>
+
+              <IonCol>
               <div className={`custom-dash-card ${activeIndex === 1 ? "active" : ""}`}
                 onClick={() => setActiveIndex(1)}
                 >
@@ -163,8 +177,11 @@ function Dashboard() {
                 </span>
                 <p>Acompanhar Propostas</p>
               </div>
+              </IonCol>
+
+              <IonCol>
               <div className={`custom-dash-card ${activeIndex === 2 ? "active" : ""}`}
-                onClick={() => setActiveIndex(2)}>
+                onClick={() => setShowModal3(true)}>
                 <span>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -173,6 +190,9 @@ function Dashboard() {
                 </span>
                 <p>Meus <br />Dados</p>
               </div>
+              </IonCol>
+                </IonRow>
+              </IonGrid>
             </div>
           </div>
 
@@ -183,11 +203,14 @@ function Dashboard() {
                 <IonCardTitle className="custom-card-title">Notificações</IonCardTitle>
 
                 <div>
-                  <p className="custom-card-seeall" >Ver tudo</p>
+                  <p className="custom-card-seeall"
+                  onClick={() => setShowModal(true)} // Abre o modal ao clicar
+                  style={{ cursor: 'pointer' }}
+                  >Ver tudo</p>
                 </div>
               </IonCardHeader>
 
-              <IonCardContent className="custom-products-notification">
+              <IonCardContent className="custom-products-notification" onClick={() => setShowModal(true)} style={{ cursor: 'pointer'}}>
                 <img src="/profile.png" />
                 <div>
                   <h3 className="custom-products-notification-p">1 Notificação</h3>
@@ -196,12 +219,12 @@ function Dashboard() {
               </IonCardContent>
             </IonCard>
 
-            <div className="description-services">
+           {/*  <div className="description-services">
 
               <h3>Services</h3>
               <p>Ver tudo</p>
-            </div>
-            <IonGrid fixed={true}>
+            </div> */}
+           {/*  <IonGrid fixed={true}>
               <IonRow>
                 <IonCol><div className={`custom-dash-card-light ${activeIndex2 === 0 ? "active" : ""}`} onClick={() => setActiveIndex2(0)}>
                   <span>
@@ -237,7 +260,7 @@ function Dashboard() {
                   <p>Outros produtos</p>
                 </div></IonCol>
               </IonRow>
-            </IonGrid>
+            </IonGrid> */}
 
             <div className="description-services">
 
@@ -302,6 +325,27 @@ function Dashboard() {
 
         </IonContent>
       </IonPage>
+          <IonModal isOpen={showModal} onDidDismiss={() => setShowModal(false)} className="modal-dashboard1">
+        <Notification /> {/* Exibe o componente Notification dentro do modal */}
+        <IonButton onClick={() => setShowModal(false)} expand="block" color="danger">
+          Fechar
+        </IonButton>
+      </IonModal>
+
+
+      <IonModal isOpen={showModal2} onDidDismiss={() => setShowModal2(false)} className="modal-dashboard1">
+        <Notification2 />
+        <IonButton onClick={() => setShowModal2(false)} expand="block" color="danger">
+          Fechar
+        </IonButton>
+      </IonModal>
+
+      <IonModal isOpen={showModal3} onDidDismiss={() => setShowModal3(false)} className="modal-dashboard1">
+        <Notification3 />
+        <IonButton onClick={() => setShowModal3(false)} expand="block" color="danger">
+          Fechar
+        </IonButton>
+      </IonModal>
     </>
   );
 }

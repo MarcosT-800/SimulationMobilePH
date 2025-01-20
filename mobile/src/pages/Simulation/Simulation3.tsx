@@ -11,6 +11,7 @@ import {
     IonItem,
     IonToast,
 } from "@ionic/react";
+import InputMask from "react-input-mask";
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import ModalButton from "../../components/Buttons/Button";
 import './Simulation3.css';
@@ -37,30 +38,32 @@ function Simulation3() {
 
                     <h3 className="custom-simulation3-simular">Confira seus dados pessoais</h3>
 
-                     <div className="custom-content-div">
-                        <div className="custom-content-input">
-                                    <label className="custom-label">CPF</label>
-                                    <button className="custom-input">
-                                    
-                                        <input 
-                                        type="email" 
-                                        placeholder="000.000.000.00"
-                                        className="custom-input-input"
-                                        />
-                                    </button>
-                                    <label className="custom-label2">Data de Nascimento</label>
-                                    <button className="custom-input">
-                                        
-                                        <input 
-                                        type="email"
-                                        placeholder="10/02/2024" 
-                                        className="custom-input-input"
-                                    />
-                                    </button>
-                        </div>
-                     <div>
-                     </div>
-                     </div>
+                    <div className="custom-content-div">
+      <div className="custom-content-input">
+        {/* CPF Input */}
+        <label className="custom-label">CPF</label>
+        <button className="custom-input">
+          <InputMask
+            mask="999.999.999-99"
+            placeholder="000.000.000-00"
+            className="custom-input-input"
+            type="text"
+          />
+        </button>
+
+        {/* Date of Birth Input */}
+        <label className="custom-label2">Data de Nascimento</label>
+        <button className="custom-input">
+          <InputMask
+            mask="99/99/9999"
+            placeholder="DD/MM/AAAA"
+            className="custom-input-input"
+            type="text"
+          />
+        </button>
+      </div>
+    </div>
+
 
                      <div className="warner-content">
                       <div className="warner">
@@ -72,18 +75,21 @@ function Simulation3() {
                      </div>
                      
                      <div className="custom-content-check">
+  <div className="check">
+    <input type="checkbox" id="privacy" />
+    <label htmlFor="privacy" className="p_credenciais">
+      Li e estou de acordo com o aviso de privacidade e a política de serviços da PH negócios
+    </label>
+  </div>
 
-                                        <div className="check">
-                                <input type="checkbox"/>
-                                <p className="p_credenciais">Li e estou de acordo com o aviso de <span>privacidade</span> e a <span>politica de serviços</span> da <span>PH negócios</span></p>
-                                </div>
+  <div className="check">
+    <input type="checkbox" id="data-share" />
+    <label htmlFor="data-share" className="p_credenciais">
+      Você concorda que a PH negócios compartilhe seus dados com o banco futuro para a simulação do saque aniversário?
+    </label>
+  </div>
+</div>
 
-
-                                <div className="check">
-                                <input type="checkbox"/>
-                                <p className="p_credenciais">Você concorda que a PH negócios compartilhes seus dados com o banco futuro para a simulação do saque aniversário?</p>
-                                </div>
-                     </div>
 
                     <div className="custom-button-content">
                         <Link to="/loading">

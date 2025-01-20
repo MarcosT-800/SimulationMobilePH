@@ -90,7 +90,7 @@
 
 .custom-dash-card {
   display: flex;
-  padding: 22px 14px;
+  padding: 20px 14px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -183,6 +183,7 @@
   color: #D70404;
   font-size: 15px;
   font-weight: 500;
+  background: transparent;
 }
 
 .custom-products-notificationcardheader {
@@ -366,6 +367,7 @@
   transition: background 0.3s ease-in-out;
 }
 
+
 .custom-dash-card-light.active {
   background: #e8e9ec;
 }
@@ -384,5 +386,8 @@
 
 .custom-dash-card-light.active span {
   background: white;
-  
+}
+
+.modal-dashboard1 {
+  --height: 100vh;
 }

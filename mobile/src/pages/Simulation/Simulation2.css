@@ -48,6 +48,14 @@
     margin-left: 26px;
 }
 
+.check-simulation2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
 .custom-simulation2-checkcontent {
     display: flex;
     width: 355px;
@@ -58,7 +66,6 @@
     border: 1px solid var(--Gray_F0, #F0F0F0);
     background: var(--White, #FFF);
     justify-content: center;
-    margin-left: 25px;
     margin-top: 20px;
 }
 
